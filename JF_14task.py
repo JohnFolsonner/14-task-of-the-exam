@@ -33,10 +33,11 @@ def IsPrime(num):
 
 # /Variable block/
 SUMM = 0
+n = int(input())
 # /Variable block/
 
 for i in range(2, 11):
-    num = convert(437, to_base=i)
+    num = convert(n, to_base=i)
     if IsPrime(sum(num)) == True:
         SUMM += i
 
