@@ -8,7 +8,7 @@ import math
 # /IMPORT BLOCK/
 
 # /DEF BLOCK/
-def convert(num, to_base=2):
+def Convert(num, to_base=2):
     conv_num = 0
     X = 1
     while num:
@@ -17,7 +17,7 @@ def convert(num, to_base=2):
         num //= to_base
     return conv_num
 
-def sum(num):
+def Sum(num):
     s = 0
     while num:
         s += num % 10
@@ -37,8 +37,8 @@ n = int(input())
 # /Variable block/
 
 for i in range(2, 11):
-    num = convert(n, to_base=i)
-    if IsPrime(sum(num)) == True:
+    num = Convert(n, to_base=i)
+    if IsPrime(Sum(num)) == True:
         SUMM += i
 
 print(SUMM)
